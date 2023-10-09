@@ -5,8 +5,8 @@ ans = 10000
 
 for x in range(10000):
     for y in range(10000):
-        temp = A * x - B * y
-        if temp % C != 0 or temp > N:
+        temp = A * x + B * y
+        if (N - temp) % C != 0 or temp > N:
             continue
         z = (N - temp) // C
         if ans > x + y + z:
