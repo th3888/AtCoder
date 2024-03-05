@@ -1,14 +1,9 @@
 def main():
     A, B = map(int, input().split())
 
-    ans = 0
+    ans = (B - 1 + A - 2) / (A - 1)
 
-    for i in range(1, B):
-        if A * i - (i - 1) >= B:
-            ans = i
-            break
-
-    print(ans)
+    print(int(ans))
 
 
 if __name__ == "__main__":
